@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/notas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="500dp"
+        android:text="@string/notas"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAgregarNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/agregar_nota"
+        app:backgroundTint="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <ImageButton
+        android:id="@+id/folder"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="664dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/abrir_carpeta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_folder"
+        app:tint="#FFC107" />
+
+    <ImageButton
+        android:id="@+id/shoppinglist"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="584dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/lista_compra"
+        app:layout_constraintBottom_toTopOf="@+id/fabAgregarNota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/outline_add_shopping_cart_24"
+        app:tint="#FFC107" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="188dp"
+        app:layout_constraintTop_toBottomOf="@id/notas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusTopStart="100dp"
+        app:boxCornerRadiusTopEnd="100dp"
+        app:boxCornerRadiusBottomStart="100dp"
+        app:boxCornerRadiusBottomEnd="100dp"
+        app:boxBackgroundColor="#1C1C1C"
+        app:boxStrokeColor="@android:color/transparent"
+        app:boxStrokeWidth="0dp"
+        app:startIconDrawable="@drawable/outline_bookmark_manager_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/barrabusqueda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_buscar_notas"
+            android:paddingStart="48dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#FBF8F8F8" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

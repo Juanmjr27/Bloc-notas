@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Vista</string>
+    <string name="agregar_nota">Agregar nueva nota</string>
+    <string name="notas">Notas</string>
+    <string name="abrir_carpeta">Abrir carpeta</string>
+    <string name="lista_compra">Lista Compra</string>
+    <string name="buscar_notas">Buscar notas</string>
+    <string name="hint_buscar_notas">Buscar notas</string>
+    <string name="boton_basura">Boton Basura</string>
+    <string name="titulo_nota">Título</string>
+    <string name="fecha_nota">Fecha de la nota</string>
+</resources>
